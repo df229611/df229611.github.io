@@ -81,10 +81,10 @@ html, body {
  .framediv {
   border: 30px solid #40c4c8;
   padding: 0px;
-  -moz-border-image: url(frame.png) 30 round round;
-  -webkit-border-image: url(frame.png) 30 round round; 
-  -o-border-image: url(frame.png) 30 round round;
-  border-image: url(frame.png) 30 round round;
+  -moz-border-image: url(../img/frame.png) 30 round round;
+  -webkit-border-image: url(../img/frame.png) 30 round round; 
+  -o-border-image: url(../img/frame.png) 30 round round;
+  border-image: url(../img/frame.png) 30 round round;
 	color: white;
 	font-family: sans-serif, cursive;
 	width: 0%;
