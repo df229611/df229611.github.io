@@ -27,31 +27,11 @@
 		}
 
 		function Start(){
-			alert("Ok");
-			//Определяем устройство
-			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {//Вы используете мобильное устройство (телефон или планшет)
-
-				if (navigator.userAgent.search(/Safari/) < -1) {
-
-					document.getElementById("blockcenter").style.height='0%';
-					document.getElementById('gamecontainer').style.border = '0px solid #000000';
-					alert("Телефон");
-				};
-
-			}else{//Вы используете компьютер
-
-				var clientWidth=document.body.clientWidth;   //Ширина области браузера
-				var clientHeight=document.body.clientHeight; //Высота области браузера
-				document.getElementById("blockcenter").style.height='5%';
-				document.getElementById('gamecontainer').style.border = '30px solid #000000';
-				//document.getElementById('gamecontainer').style.borderImage = 'url(https://1.bp.blogspot.com/-EgY0UdNidyY/XkuYiGkXQTI/AAAAAAAAArg/nDBqzjeo1Z00AVCL2x35clk1_oUDIbPAQCLcBGAsYHQ/s1600/frame.png) 30 round round'
-				document.getElementById('gamecontainer').style.borderImage = 'url(frame.png) 30 round round'
-				alert("Компьютер");
-			}
-
+			document.getElementById('gamecontainer').style.border = '0px solid #000000';
+			document.getElementById('gamecontainer').style.borderImage = 'url(frame.png) 30 round round'
 		}
 
-		let Width = 600;
+		let Width = 500;
 		let Height = 400;
 		let game = new Phaser.Game(Width, Height, Phaser.CANVAS, "game",
 			{preload:preload, create:create, update:update, render:render});
