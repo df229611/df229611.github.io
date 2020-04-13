@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1000px, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="script.js"></script>
-	<title>First Step</title>
+	<script src="src/phaser.2.6.2.min.js"></script>
+	<script src="src/phaser-kinetic-scrolling-plugin.js"></script>
+	<title>Hello World</title>
 </head>
 <body>
-	<H1>HELLO WORLD!</H1>
+	<div id="game" class="framediv"></div>
+	<script>
+		let Width = 900;
+		let Height = 550;
+		let game = new Phaser.Game(Width, Height, Phaser.CANVAS, "game",
+			{preload:preload, create:create, update:update, render:render});
+
+		function preload(){
+
+		}
+
+		function create(){
+			game.stage.backgroundColor = "#444444";
+		}
+
+		function update(){
+
+		}
+
+		function render(){
+
+		}
+
+	</script>
 </body>
 </html>
