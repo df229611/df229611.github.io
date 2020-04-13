@@ -2,17 +2,55 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=1000px, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="src/phaser.2.6.2.min.js"></script>
 	<script src="src/phaser-kinetic-scrolling-plugin.js"></script>
-	<title>Hello World!!</title>
+	<title>Hello World</title>
 </head>
 <body>
-	<div id="game" class="framediv"></div>
+	<div id="game" class="framediv" onmousedown="toggleFullScreen()"></div>
 	<script>
-		let Width = 900;
-		let Height = 550;
+
+		//Полноэкранный режим
+		function toggleFullScreen() {
+			if (!document.fullscreenElement &&
+		    	!document.mozFullScreenElement && !document.webkitFullscreenElement) {
+		    	if (document.documentElement.requestFullscreen) {
+		    		document.documentElement.requestFullscreen();
+		    	} else if (document.documentElement.mozRequestFullScreen) {
+		    		document.documentElement.mozRequestFullScreen();
+		    	} else if (document.documentElement.webkitRequestFullscreen) {
+		    		document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+		    	}
+		  	}
+		}
+
+		function Start(){
+
+			//Определяем устройство
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {//Вы используете мобильное устройство (телефон или планшет)
+
+				if (navigator.userAgent.search(/Safari/) < -1) {
+
+					document.getElementById("blockcenter").style.height='0%';
+					document.getElementById('gamecontainer').style.border = '0px solid #000000';
+				};
+
+			}else{//Вы используете компьютер
+
+				var clientWidth=document.body.clientWidth;   //Ширина области браузера
+				var clientHeight=document.body.clientHeight; //Высота области браузера
+				document.getElementById("blockcenter").style.height='5%';
+				document.getElementById('gamecontainer').style.border = '30px solid #000000';
+				//document.getElementById('gamecontainer').style.borderImage = 'url(https://1.bp.blogspot.com/-EgY0UdNidyY/XkuYiGkXQTI/AAAAAAAAArg/nDBqzjeo1Z00AVCL2x35clk1_oUDIbPAQCLcBGAsYHQ/s1600/frame.png) 30 round round'
+				document.getElementById('gamecontainer').style.borderImage = 'url(frame.png) 30 round round'
+			}
+
+		}
+
+		let Width = 600;
+		let Height = 400;
 		let game = new Phaser.Game(Width, Height, Phaser.CANVAS, "game",
 			{preload:preload, create:create, update:update, render:render});
 
@@ -31,7 +69,11 @@
 		function render(){
 
 		}
-
+		//Запускаем скрипты после загрузки страницы  
+		document.addEventListener('DOMContentLoaded', function() {
+		    
+			setTimeout(Start, 100);
+		}, false);
 	</script>
 </body>
 </html>
