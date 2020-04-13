@@ -2,59 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="src/phaser.2.6.2.min.js"></script>
 	<script src="src/phaser-kinetic-scrolling-plugin.js"></script>
-	<title>Hello World!!!</title>
+	<title>Hello World!</title>
 </head>
 <body>
-	<div id="game" onmousedown="toggleFullScreen()"></div>
-	<script>
 
-		//Полноэкранный режим
-		function toggleFullScreen() {
-			if (!document.fullscreenElement &&
-		    	!document.mozFullScreenElement && !document.webkitFullscreenElement) {
-		    	if (document.documentElement.requestFullscreen) {
-		    		document.documentElement.requestFullscreen();
-		    	} else if (document.documentElement.mozRequestFullScreen) {
-		    		document.documentElement.mozRequestFullScreen();
-		    	} else if (document.documentElement.webkitRequestFullscreen) {
-		    		document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-		    	}
-		  	}
-		}
-
-		function Start(){
-
-		}
-
-		let Width = 550;
-		let Height = 400;
-		let game = new Phaser.Game(Width, Height, Phaser.CANVAS, "game",
-			{preload:preload, create:create, update:update, render:render});
-
-		function preload(){
-
-		}
-
-		function create(){
-			game.stage.backgroundColor = "#444444";
-		}
-
-		function update(){
-
-		}
-
-		function render(){
-
-		}
-		//Запускаем скрипты после загрузки страницы  
-		document.addEventListener('DOMContentLoaded', function() {
-		    
-			setTimeout(Start, 1000);
-		}, false);
-	</script>
 </body>
 </html>
