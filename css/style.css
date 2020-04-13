@@ -1,0 +1,18 @@
+/*https://habrahabr.ru/post/168149/      Генератор CSS*/
+/* http://www.w3schools.com/css/css3_images.asp */
+
+* { margin: 0; padding: 0; }
+p { margin: 5px 0 10px 0; }
+
+header{
+  height: 209px;
+  text-align: center;
+  background: url(../img/header.jpg) repeat-x center bottom;
+}
+
+.content{
+  font-size: 20px;
+  border: 1px dashed black;
+  width: 80%;
+  margin: 0px auto;
+}
