@@ -1,11 +1,21 @@
 * {margin: 0; padding: 0; }
 
+@font-face {
+	font-family: Test; /* Гарнитура шрифта */
+    src: url('../fonts/Traditional Gothic, 17th c..TTF'); /* Путь к файлу со шрифтом */
+}
+
+
+
 header{
 
-	height: 190px;
+	height: 180px;
 	background: url(../img/header.jpg) repeat-x center bottom;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 30px;
+	font-family: Test;
+	font-size: 20px;
+	color: #2E3436FF;	
 }
 
 .content{
@@ -39,3 +49,5 @@ footer{
 	padding-top: 30px;
 
 }
+
+
