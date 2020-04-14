@@ -1,8 +1,8 @@
 * {margin: 0; padding: 0; }
 
 @font-face {
-	font-family: Test; /* Гарнитура шрифта */
-    src: url('../fonts/Traditional Gothic, 17th c..TTF'); /* Путь к файлу со шрифтом */
+	font-family: Test;
+    src: url('df229611.github.io/fonts/Traditional Gothic, 17th c..TTF');
 }
 
 
