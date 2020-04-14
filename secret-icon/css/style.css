@@ -104,14 +104,13 @@ body {
 }
 
  .framediv {
-  border: 30px solid #40c4c8;
+  border: 0px solid #40c4c8;
   padding: 0px;
-  -moz-border-image: url(frame.png) 30 round round;
-  -webkit-border-image: url(frame.png) 30 round round; 
-  -o-border-image: url(frame.png) 30 round round;
-  border-image: url(frame.png) 30 round round;
+  -moz-border-image: url() 0 round round;
+  -webkit-border-image: url() 0 round round; 
+  -o-border-image: url() 0 round round;
+  border-image: url() 0 round round;
 	color: white;
-	font-family: &#39;Press Start 2P&#39;, cursive;
 	width: 0%;
 	height: 0%;
 	top: 0; left: 0; bottom: 0; right: 0;
