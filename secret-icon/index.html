@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="src/phaser.2.6.2.min.js"></script>
 	<title>secret-icon</title>
 </head>
 <body>
-	<div id="game"></div>
+	<div id="game" class="framediv"></div>
 	<script>
-		let Width = 800;
-		let Height = 400;
+		let Width = 900;
+		let Height = 450;
 		let game = new Phaser.Game(Width, Height, Phaser.CANVAS, "game", 
 			{preload:preload, create:create, update:update, render:render});
 
 		function preload(){
-
+			SerifTextBig = {font:"40px serif", fill:"#ffffff", align:"center"};
 		}
 
 		function create(){
 			game.stage.backgroundColor = "#444444";
+
+			text = game.add.text(Width/2, Height/2, "", SerifTextBig);
+			text.anchor.setTo(0.5);
+			text.setText("HELLO WORLD");
+			Rectangle = new Phaser.Rectangle(800, 100, 99, 99);
 		}
 
 		function update(){
@@ -29,6 +34,7 @@
 
 		function render(){
 
+			game.debug.geom(Rectangle, "#ffffff", true);
 		}
 	</script>
 	
