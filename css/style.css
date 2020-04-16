@@ -13,15 +13,16 @@
 
 header{
 
-	height: 180px;
-	background: url(../img/header.png) repeat-x center bottom;
+	height: 200px;
+	/* background: url(../img/header.png) repeat-x center bottom; */
+	background: url(../img/wood.png) repeat-x center bottom;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 100px;
 	font-family: Test;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 100%;
-	color: #000000FF;	
+	color: #EEEEECFF;	
 }
 
 .content{
@@ -59,7 +60,7 @@ footer{
 	background-color: #BABDB6FF;
 	margin-top: 20px;
 	padding-top: 30px;
-	font-family: Typecast;
+	font-family: PixelCyr;
 
 }
 
