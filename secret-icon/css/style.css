@@ -2,7 +2,7 @@
 /* http://www.w3schools.com/css/css3_images.asp */
 
 * { margin: 0; padding: 0; }
-p { margin: 5px 0 10px 0; }
+p { margin: 0px 0 0px 0; }
 
 canvas { border: 5px solid black; }
 canvas#b { width: 105px; height: 105px; } /* 5 * 21 = 105 */
