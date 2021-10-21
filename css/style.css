@@ -1,0 +1,67 @@
+* {margin: 0; padding: 0; }
+
+@font-face {
+	font-family: Test; /* Гарнитура шрифта */
+    src: url('../fonts/HeinzHeinrich-Regular.otf'); /* Путь к файлу со шрифтом */ 
+}
+
+
+@font-face {
+	font-family: PixelCyr; /* Гарнитура шрифта */
+    src: url('../fonts/PixelCyr.ttf'); /* Путь к файлу со шрифтом */ 
+}
+
+header{
+
+	height: 200px;
+	/* background: url(../img/header.png) repeat-x center bottom; */
+	background: url(../img/wood.png) repeat-x center bottom;
+	text-align: center;
+	padding-top: 100px;
+	font-family: Test;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 100%;
+	color: #EEEEECFF;	
+}
+
+.content{
+	transform: scale(1);
+	transition:1s transform;
+	margin: 0px auto;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 2%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%; 
+	border:5px solid #BABDB6FF;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #888A85FF;
+	font-size: 20px;
+	font-family: PixelCyr;
+}
+
+.content p{
+	font-family: PixelCyr;
+}
+
+.content:hover{
+	transform: scale(1.05);
+	transition: 1s transform;
+
+}
+
+footer{
+	border: 1px solid grey;
+	height: 200px;
+	text-align:center;
+	background-color: #BABDB6FF;
+	margin-top: 20px;
+	padding-top: 30px;
+	font-family: PixelCyr;
+
+}
+
+
