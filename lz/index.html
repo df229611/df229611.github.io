@@ -64,6 +64,9 @@
 			<p>Цена грн.</p>
 			<br>
 		</div>
+		<div class="top">
+		<a title="перейти в начало страницы" href="#header">наверх</a>
+		</div>
 	</div>
 	<footer>
 		<div class="information">
@@ -95,6 +98,15 @@
 	      }
 	  }
 	}
+	</script>
+
+	<script>
+	$(document).ready(function() {
+	  $('a[href=#header]').click(function(){
+	    $('html, body').animate({scrollTop:0}, 'slow');
+	    return false;
+	  });
+	});
 	</script>
 </body>
 </html>
