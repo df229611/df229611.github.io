@@ -21,7 +21,7 @@ body{
 
 header{
 
-	height: 180px;
+	height: 130px;
 	/*background: url(../img/wood.png) repeat-x center top;*/
 	background-color: white;
 	text-align: center;
@@ -231,10 +231,12 @@ footer{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #E5E5E5;
+    background-color: #E8E8E8;
     min-width: 70%;
     min-height: 35%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border: 0px solid #D2D2D2FF;
+	border-radius: 0px;
+    box-shadow: 0px 8px 16px 10px #888A85FF;
     z-index: 1;
     right: 5%;
     padding: 20px 20px;
@@ -249,6 +251,7 @@ footer{
     text-decoration: none;
     display: block;
     text-align: left;
+    color: black;
 }
 
 .dropdown-content a:hover {
