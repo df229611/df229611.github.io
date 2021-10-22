@@ -80,7 +80,7 @@ header{
     cursor: pointer;
 	background-color: #EAEAEA;			/* Цвет фона блока */
 	margin: 0px auto;
-	width: 70%;
+	width: 85%;
 	margin-top: 70px;
 	margin-bottom: 70px;
 	padding-left: 0%;
@@ -116,7 +116,7 @@ header{
 
 footer{
 	border: 0px solid #BABDB6FF;
-	height: 300px;
+	height: 340px;
 	text-align:center;
 	background-color: #000000FF;
 	margin-top: 10px;
