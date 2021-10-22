@@ -21,17 +21,19 @@ body{
 
 header{
 
-	height: 250px;
+	height: 180px;
 	/*background: url(../img/wood.png) repeat-x center top;*/
 	background-color: white;
 	text-align: center;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	font-family: Arial, Helvetica, sans-serif;
+	border: 0px solid #BABDB6FF;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 100%;
-	color: black;	
+	color: black;
+	box-shadow: 0 0 20px #888A85FF;	
 }
 
 .bodyblock{
@@ -42,11 +44,11 @@ header{
 	margin-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 60px;
-	padding-bottom: 80px; 
+	padding-top: 0px;
+	padding-bottom: 50px; 
 	border: 0px solid #BABDB6FF;
 	border-radius: 0px;
-	box-shadow: 0 0 10px #888A85FF;
+	box-shadow: 0 0 0px #888A85FF;
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -54,18 +56,18 @@ header{
 
 .logo{
 	/* cursor: pointer; */
-	width: 40%;							/* Ширина блока */
+	width: 45%;							/* Ширина блока */
 	height: 95%;						/* Высота блока */
 	background: url(../img/logo.png);	/* Путь к фоновому рисунку */
 	background-repeat: no-repeat;		/* Повторяем фон */
-	background-position: top center;	/* Положение фона */
+	background-position: top left;	/* Положение фона */
 	background-size: contain;			/* Масштабируем фон */
 	float: left;						/* Обтекание блока */
-	border: 0px solid #BABDB6FF;		/* Контур блока */
+	border: 0px solid #000000FF;		/* Контур блока */
 	font-family: TG17th;				/* Шрифт блока */
 	font-size: 50px;					/* Размер шрифта блока */
 	color: black;						/* Цвет текста блока */
-	margin-left: 10px;					/* Отступ блока слева */
+	margin-left: 0px;					/* Отступ блока слева */
 	margin-top: 0px;					/* Отступ блока сверху */
 	margin-bottom: 10px;				/* Отступ блока снизу */
 }
@@ -75,16 +77,17 @@ header{
 	transform: scale(1);
 	transition:1s transform;
 */
-	background-color: #ededed;			/* Цвет фона блока */
+    cursor: pointer;
+	background-color: #EAEAEA;			/* Цвет фона блока */
 	margin: 0px auto;
-	width: 85%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-top: 1%;
-	padding-bottom: 1%; 
-	border: 0px solid #BABDB6FF;
+	width: 70%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-top: 0%;
+	padding-bottom: 0%; 
+	border: 0px solid #D2D2D2FF;
 	border-radius: 0px;
 	box-shadow: 0 0 15px #888A85FF;
 	font-size: 18px;
@@ -93,7 +96,8 @@ header{
 
 .content p{
 	font-family: Arial, Helvetica, sans-serif;
-	margin-top: 10px;
+	margin-left: 25px;
+	margin-top: 15px;
 }
 
 .content:hover{
@@ -104,10 +108,9 @@ header{
 }
 
 .content img{
-	
-	width: 99%;
     display: block; /* Блочный элемент (для старых браузеров) */
     margin: 0 auto; /* Выравнивание по центру */
+	width: 100%;	/* Ширина */
 }
 
 
@@ -116,15 +119,15 @@ footer{
 	height: 300px;
 	text-align:center;
 	background-color: #000000FF;
-	margin-top: 40px;
-	padding-top: 20px;
+	margin-top: 10px;
+	padding-top: 50px;
 	color: #D3D7CFFF;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .information{
-	width: 92%;
-	height: 180px;
+	width: 90%;
+	height: 190px;
 	margin: 0px auto;
 	float: left;
 	border:1px solid #BABDB6FF;
@@ -141,6 +144,18 @@ footer{
 	text-align: left;
 	margin-left: 15px;
 	margin-top: 5px;
+}
+
+.information a{
+    color: white;			/* Цвет ссылок */
+}
+
+.information a:visited {
+	color: #cecece;			/* Цвет посещенных ссылок */
+}
+
+.information a:active {
+	color: #ffff00;			/* Цвет активных ссылок */
 }
 
 .creator{
@@ -197,8 +212,8 @@ footer{
     margin-right: 50px;
     margin-top: 30px;
     margin-bottom: 20px;
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 	background: url(../img/60510.png);		/* Путь к фоновому рисунку */
 	background-repeat: no-repeat;			/* Повторяем фон */
 	background-position: top center;		/* Положение фона */
@@ -215,9 +230,9 @@ footer{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #E5E5E5;
     min-width: 70%;
-    min-height: 50%;
+    min-height: 35%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     right: 5%;
