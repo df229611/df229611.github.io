@@ -261,3 +261,11 @@ footer{
 .show {
     display: block;
 }
+
+/* наверх */
+.top a {
+background: #000000 none repeat scroll 0 0;
+border-radius: 30px 10px / 10px 20px;
+color: #fff;
+padding: 7px 15px;
+}
