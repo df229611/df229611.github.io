@@ -1,0 +1,271 @@
+* {margin: 0; padding: 0; }
+
+@font-face {
+	font-family: HeRe; /* Гарнитура шрифта */
+    src: url('../fonts/HeinzHeinrich-Regular.otf'); /* Путь к файлу со шрифтом */ 
+}
+
+@font-face {
+	font-family: TG17th; /* Гарнитура шрифта */
+    src: url('../fonts/TG17th.TTF'); /* Путь к файлу со шрифтом */ 
+}
+
+@font-face {
+	font-family: PixelCyr; /* Гарнитура шрифта */
+    src: url('../fonts/PixelCyr.ttf'); /* Путь к файлу со шрифтом */ 
+}
+
+body{
+	background-color: white; /* Цвет фона веб-страницы */
+} 
+
+header{
+
+	height: 200px;
+	/*background: url(../img/wood.png) repeat-x center top;*/
+	background-color: white;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 0px solid #BABDB6FF;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 100%;
+	color: black;
+	box-shadow: 0 0 20px #888A85FF;	
+}
+
+.bodyblock{
+	background-color: white;			/* Цвет фона веб-страницы */
+	margin: 0px auto;
+	width: 92%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 50px; 
+	border: 0px solid #BABDB6FF;
+	border-radius: 0px;
+	box-shadow: 0 0 0px #888A85FF;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo{
+	/* cursor: pointer; */
+	width: 45%;							/* Ширина блока */
+	height: 95%;						/* Высота блока */
+	background: url(../img/logo.png);	/* Путь к фоновому рисунку */
+	background-repeat: no-repeat;		/* Повторяем фон */
+	background-position: top left;	/* Положение фона */
+	background-size: contain;			/* Масштабируем фон */
+	float: left;						/* Обтекание блока */
+	border: 0px solid #000000FF;		/* Контур блока */
+	font-family: TG17th;				/* Шрифт блока */
+	font-size: 50px;					/* Размер шрифта блока */
+	color: black;						/* Цвет текста блока */
+	margin-left: 0px;					/* Отступ блока слева */
+	margin-top: 0px;					/* Отступ блока сверху */
+	margin-bottom: 10px;				/* Отступ блока снизу */
+}
+
+.content{
+/*
+	transform: scale(1);
+	transition:1s transform;
+*/
+    cursor: pointer;
+	background-color: #EAEAEA;			/* Цвет фона блока */
+	margin: 0px auto;
+	width: 85%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-top: 0%;
+	padding-bottom: 0%; 
+	border: 0px solid #D2D2D2FF;
+	border-radius: 0px;
+	box-shadow: 0 0 15px #888A85FF;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content p{
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+
+.content:hover{
+/*
+	transform: scale(1.05);
+	transition: 1s transform;
+*/
+}
+
+.content img{
+    display: block; /* Блочный элемент (для старых браузеров) */
+    margin: 0 auto; /* Выравнивание по центру */
+	width: 100%;	/* Ширина */
+}
+
+
+footer{
+	border: 0px solid #BABDB6FF;
+	height: 340px;
+	text-align:center;
+	background-color: #000000FF;
+	margin-top: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #D3D7CFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.information{
+	width: 90%;
+	height: 190px;
+	margin: 0px auto;
+	float: left;
+	border:1px solid #BABDB6FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #EEEEECFF;
+	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+
+.information p{
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.information a{
+    color: white;			/* Цвет ссылок */
+}
+
+.information a:visited {
+	color: #cecece;			/* Цвет посещенных ссылок */
+}
+
+.information a:active {
+	color: #ffff00;			/* Цвет активных ссылок */
+}
+
+.creator{
+	width: 99%;
+	height: 30px;
+	float: left;
+	border: 0px solid #BABDB6FF;
+	font-family: PixelCyr;
+	font-size: 18px;
+	color: #EEEEECFF;
+	margin-left: 0px;
+	margin-top: 70px;
+}
+
+/* Меню навигации */
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    border: 0px solid #BABDB6FF;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;			/* left */
+}
+
+/* Впадающее меню */
+
+.dropdown {
+    float: left;			/* left */
+    overflow: hidden;
+}
+
+/* Меню выпадения */
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+	margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+	width: 55px;
+	height: 55px;
+	background: url(../img/60510.png);		/* Путь к фоновому рисунку */
+	background-repeat: no-repeat;			/* Повторяем фон */
+	background-position: top center;		/* Положение фона */
+	background-size: contain;				/* Масштабируем фон */
+}
+
+/* Меню при наведении */
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: white;
+}
+
+/* Выпадающий блок */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E8E8E8;
+    min-width: 70%;
+    min-height: 35%;
+	border: 0px solid #D2D2D2FF;
+	border-radius: 0px;
+    box-shadow: 0px 8px 16px 10px #888A85FF;
+    z-index: 1;
+    right: 5%;
+    padding: 20px 20px;
+}
+
+/* То что внутри выпадающего блока */
+
+.dropdown-content a {
+    float: none;
+    color: grey;
+    padding: 6% 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* наверх */
+.top a {
+background: #000000 none repeat scroll 0 0;
+border-radius: 30px 10px / 10px 20px;
+color: #fff;
+padding: 7px 15px;
+}
