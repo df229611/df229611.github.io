@@ -314,6 +314,9 @@ footer{
 	border-radius: 50px;
 }
 
+.top2 img{
+	width:  100%;
+}
 
 .row {
     display: -ms-flexbox; /* IE10 */
