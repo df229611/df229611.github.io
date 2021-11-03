@@ -71,7 +71,7 @@ header{
 	margin: 0px auto;
 	width: 99%;
 	margin-top: 22px;
-	margin-bottom: 22px;
+	margin-bottom: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 0px;
@@ -140,7 +140,6 @@ header{
     margin: 0 auto; /* Выравнивание по центру */
 	width: 100%;	/* Ширина */
 }
-
 
 footer{
 	border: 0px solid #BABDB6FF;
@@ -308,7 +307,7 @@ footer{
     width: 90px;
     height: 90px;
 	margin: 0px auto;
-	border: 1px solid #D2D2D2FF;
+	border: 0px solid #D2D2D2FF;
 	font-size: 50px;
 	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
 	border-radius: 50px;
