@@ -1,4 +1,7 @@
-* {margin: 0; padding: 0; }
+* {
+	margin: 0; padding: 0; 
+	box-sizing: border-box;
+}
 
 @font-face {
 	font-family: HeRe; /* Гарнитура шрифта */
@@ -19,6 +22,15 @@ body{
 	background-color: white; /* Цвет фона веб-страницы */
 } 
 
+hr {
+	margin: 0px auto;
+	width: 95%;
+	border: none; /* Убираем границу */
+	background-color: grey; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+}
+
 header{
 
 	height: 200px;
@@ -36,10 +48,28 @@ header{
 	box-shadow: 0 0 20px #888A85FF;	
 }
 
+.block{
+	margin: 0px auto;
+	width: 99%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px; 
+	border: 0px solid #BABDB6FF;
+	border-radius: 0px;
+	box-shadow: 0 0 0px #888A85FF;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+
+}
+
 .bodyblock{
 	background-color: white;			/* Цвет фона веб-страницы */
 	margin: 0px auto;
-	width: 92%;
+	width: 99%;
 	margin-top: 30px;
 	margin-bottom: 10px;
 	padding-left: 10px;
@@ -78,11 +108,11 @@ header{
 	transition:1s transform;
 */
     cursor: pointer;
-	background-color: #EAEAEA;			/* Цвет фона блока */
+	background-color: #fcfcfc;			/* Цвет фона блока */
 	margin: 0px auto;
-	width: 85%;
-	margin-top: 70px;
-	margin-bottom: 70px;
+	width: 95%;
+	margin-top: 80px;
+	margin-bottom: 80px;
 	padding-left: 0%;
 	padding-right: 0%;
 	padding-top: 0%;
@@ -116,7 +146,8 @@ header{
 
 footer{
 	border: 0px solid #BABDB6FF;
-	height: 340px;
+	height: 430px;
+	width:  100%;
 	text-align:center;
 	background-color: #000000FF;
 	margin-top: 10px;
@@ -124,20 +155,21 @@ footer{
 	padding-bottom: 30px;
 	color: #D3D7CFFF;
 	font-family: Arial, Helvetica, sans-serif;
+	float: left;
 }
 
 .information{
 	width: 90%;
-	height: 190px;
+	height: 250px;
 	margin: 0px auto;
 	float: left;
 	border:1px solid #BABDB6FF;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 21px;
 	color: #EEEEECFF;
 	margin-left: 5%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 0px;
 	padding-top: 5px;
 }
 
@@ -168,7 +200,7 @@ footer{
 	font-size: 18px;
 	color: #EEEEECFF;
 	margin-left: 0px;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 
 /* Меню навигации */
@@ -264,8 +296,115 @@ footer{
 
 /* наверх */
 .top a {
-background: #000000 none repeat scroll 0 0;
-border-radius: 30px 10px / 10px 20px;
-color: #fff;
-padding: 7px 15px;
+	background: #000000 none repeat scroll 0 0;
+	border-radius: 30px 10px / 10px 20px;
+	color: #fff;
+	padding: 7px 15px;
+}
+
+/* наверх */
+.top2 a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+	margin: 0px auto;
+	background: none repeat scroll 0 0;
+	color: grey;
+	padding: 7px 15px;
+	border: 0px solid #D2D2D2FF;
+	font-size: 50px;
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	border-radius: 50px;
+    font-family: sans-serif;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    border: 0px solid #D2D2D2FF;
+}
+
+* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width:  100%;
+}
+
+.viewtext{
+    
+    display: block; /* Блочный элемент (для старых браузеров) */
+	background-color: #FFFFFF;			/* Цвет фона блока */
+	/* margin: 0px auto; */
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 0px solid #D2D2D2FF;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+}
+
+.viewtext p{
+
+	text-align: left;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+
+.panel {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    border: 0px solid #D2D2D2FF;
+	margin-bottom:  40px;
+	font-size: 24px;
+}
+
+.panel a{
+    color: #919191;			/* Цвет ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  white;
+}
+
+.panel a:visited {
+	color: #919191;			/* Цвет посещенных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+
+}
+
+.panel a:active {
+	color: white;			/* Цвет активных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  black;	
 }

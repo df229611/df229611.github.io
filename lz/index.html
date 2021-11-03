@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.7">
 	<link rel="stylesheet" href="css/style.css">
-
+	<script src="src/scrollTop.js"></script>
+	<script src="src/dropMenu.js"></script>
 </head>
 <body>
 	<header>
@@ -32,46 +33,34 @@
 		<H1></H1>
 	</header>
 	<div class="bodyblock">
-		<div class="content">
-			<img src="img/logo.png">
-			<br>
-			<p>Описание товара</p>
-			<p>Цена грн.</p>
-			<br>
+
+		<div class="content" onclick="location.href='view0000.html';">
+				<img src="img/logo.png">
+				<br>
+				<p>Описание товара</p>
+				<p>Цена грн.</p>
+				<br>
 		</div>
-		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div>
-		<div class="content" onclick="location.href='index.html';">
-			<img src="img/logo.png">
-			<br>
-			<p>Описание товара</p>
-			<p>Цена грн.</p>
-			<br>
+<!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
+
+		<div class="content" onclick="location.href='view0000.html';">
+				<img src="img/logo.png">
+				<br>
+				<p>Описание товара</p>
+				<p>Цена грн.</p>
+				<br>
 		</div>
-		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div>
-		<div class="content" onclick="location.href='index.html';">
-			<img src="img/logo.png">
-			<br>
-			<p>Описание товара</p>
-			<p>Цена грн.</p>
-			<br>
+<!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
+		
+		<div class="content" onclick="location.href='view0000.html';">
+				<img src="img/logo.png">
+				<br>
+				<p>Описание товара</p>
+				<p>Цена грн.</p>
+				<br>
 		</div>
-		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div>
-		<div class="content" onclick="location.href='index.html';">
-			<img src="img/logo.png">
-			<br>
-			<p>Описание товара</p>
-			<p>Цена грн.</p>
-			<br>
-		</div>
-		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div>
-		<div class="content" onclick="location.href='index.html';">
-			<img src="img/logo.png">
-			<br>
-			<p>Описание товара</p>
-			<p>Цена грн.</p>
-			<br>
-		</div>
-		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div>
+<!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
+		<div class="top2"> <a href="#" id="up" onclick="return up()">^</a> </div>
 	</div>
 	<footer>
 		<div class="information">
@@ -85,39 +74,8 @@
 		</div>
 		<div class="creator">Create by df229611</div>
 	</footer>
-
 	<!--  Скрипт выпадающего меню -->
-	<script>
-		/* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-		function myFunction() {
-		    document.getElementById("myDropdown").classList.toggle("show");
-		}
 
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(e) {
-		  if (!e.target.matches('.dropbtn')) {
-		    var myDropdown = document.getElementById("myDropdown");
-		      if (myDropdown.classList.contains('show')) {
-		        myDropdown.classList.remove('show');
-		      }
-		  }
-		}
-	</script>
 
-	<!--  Скрипт плавной прокрутки наверх -->
-	<script>
-		function up() {
-			var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-		  if(top > 0) {
-			
-			/* window.scrollBy(0,-100); */
- 			/* Замедление при приближении к началу страницы */
-			window.scrollBy(0,((top+100)/-15));
-			t = setTimeout('up()',20);
-		  } else clearTimeout(t);
-		  return false;
-		}
-	</script>
 </body>
 </html>
