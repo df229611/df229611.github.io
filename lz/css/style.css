@@ -302,19 +302,18 @@ footer{
 
 /* наверх */
 .top2 a {
+    display: -ms-flexbox; /* IE10 */
     display: flex;
-    width: 60px;
-    height: 60px;
+    -ms-flex-wrap: wrap; /* IE10 */
+    width: 90px;
+    height: 90px;
 	margin: 0px auto;
-	background: none repeat scroll 0 0;
-	color: grey;
-	padding: 7px 15px;
 	border: 0px solid #D2D2D2FF;
 	font-size: 50px;
 	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
 	border-radius: 50px;
-    font-family: sans-serif;
 }
+
 
 .row {
     display: -ms-flexbox; /* IE10 */
