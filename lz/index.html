@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="src/scrollTop.js"></script>
 	<script src="src/dropMenu.js"></script>
+	<script src="src/loadPage.js"></script>
 </head>
-<body>
+<body  onload="setTimeout(loadPage, 100);">
 	<header>
 		
-		<div class="logo" onclick="location.href='index.html';"><br>
-		</div>
+		<div class="logo" onclick="location.href='index.html';"></div>
 		
 		<div class="navbar">
 <!--
@@ -57,9 +57,11 @@
 				<br>
 		</div>
 <!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
-		<div class="top2"> <a href="#" id="up" onclick="return up()"><img src="img/up.png"></a></div>
+		<div class="top"> <a href="#" id="up" onclick="return up()"><img src="img/up.png"></a></div>
 	</div>
-	<footer>
+
+	<footer id="footer">
+
 		<div class="information">
 			<br>
 			LZ Celebrity
@@ -68,10 +70,12 @@
 			<p> Ukrainian fashion brand </p>
 			<p> <a href="index.html">lzcelebrity@gmail.com</a></p>
 			<p> Kyiv, Ukraine</p>
+			<div class="icon"><a href="https://www.instagram.com"><img src="img/instagram_w.png"></a></div>
+			<div class="icon"><a href="https://vk.com/"><img src="img/vk_w.png"></a></div>
+			<div class="icon"><a href="https://www.facebook.com"><img src="img/facebook_w.png"></a></div>
 		</div>
 		<div class="creator">Create by df229611</div>
 	</footer>
-	<!--  Скрипт выпадающего меню -->
 
 
 </body>
