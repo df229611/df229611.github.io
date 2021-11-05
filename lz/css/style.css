@@ -78,12 +78,12 @@ header{
 
 
 .logo{
-	/* cursor: pointer; */
+	cursor: pointer;
 	width: 45%;							/* Ширина блока */
 	height: 95%;						/* Высота блока */
 	background: url(../img/logo.png);	/* Путь к фоновому рисунку */
 	background-repeat: no-repeat;		/* Повторяем фон */
-	background-position: top left;	/* Положение фона */
+	background-position: top left;		/* Положение фона */
 	background-size: contain;			/* Масштабируем фон */
 	float: left;						/* Обтекание блока */
 	border: 0px solid #000000FF;		/* Контур блока */
@@ -92,7 +92,24 @@ header{
 	color: black;						/* Цвет текста блока */
 	margin-left: 0px;					/* Отступ блока слева */
 	margin-top: 0px;					/* Отступ блока сверху */
-	margin-bottom: 10px;				/* Отступ блока снизу */
+}
+
+.logo a{
+    color: #919191;			/* Цвет ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  white;
+}
+
+.logo a:visited {
+	color: #919191;			/* Цвет посещенных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+
+}
+
+.logo a:active {
+	color: white;			/* Цвет активных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  black;	
 }
 
 .content{
@@ -109,22 +126,15 @@ header{
 	border: 0px solid #D2D2D2FF;
 	border-radius: 0px;
 	box-shadow: 0 0 15px #888A85FF;
-	font-size: 25px;
 	font-family: Font;
+	font-size: 26px;
+	letter-spacing: 1px;
+	line-height: 1.2;
 }
 
 .content p{
-	font-family: Font;
-	font-size: 25px;
 	margin-left: 25px;
 	margin-top: 15px;
-}
-
-.content:hover{
-/*
-	transform: scale(1.05);
-	transition: 1s transform;
-*/
 }
 
 .content img{
@@ -160,7 +170,8 @@ footer{
 	margin-top: 40px;
 	margin-bottom: 0px;
 	padding-top: 5px;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	line-height: 1.3;
 }
 
 .information p{
@@ -208,7 +219,7 @@ footer{
 
 .navbar a {
     float: left;
-    font-size: 28px;
+    font-size: 30px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -217,17 +228,15 @@ footer{
 }
 
 /* Впадающее меню */
-
 .dropdown {
     float: left;			/* left */
     overflow: hidden;
 }
 
 /* Меню выпадения */
-
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 28px;    
+    font-size: 30px;    
     border: none;
     outline: none;
     color: white;
@@ -238,8 +247,8 @@ footer{
     margin-right: 50px;
     margin-top: 30px;
     margin-bottom: 20px;
-	width: 55px;
-	height: 55px;
+	width: 50px;
+	height: 50px;
 	background: url(../img/60510.png);		/* Путь к фоновому рисунку */
 	background-repeat: no-repeat;			/* Повторяем фон */
 	background-position: top center;		/* Положение фона */
@@ -252,13 +261,12 @@ footer{
 }
 
 /* Выпадающий блок */
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #E8E8E8;
-    min-width: 70%;
-    min-height: 35%;
+    min-width: 60%;
+    min-height: 30%;
 	border: 0px solid #D2D2D2FF;
 	border-radius: 0px;
     box-shadow: 0px 8px 16px 10px #888A85FF;
@@ -268,7 +276,6 @@ footer{
 }
 
 /* То что внутри выпадающего блока */
-
 .dropdown-content a {
     float: none;
     color: grey;
@@ -289,19 +296,11 @@ footer{
 
 /* наверх */
 .top a {
-	background: #000000 none repeat scroll 0 0;
-	border-radius: 30px 10px / 10px 20px;
-	color: #fff;
-	padding: 7px 15px;
-}
-
-/* наверх */
-.top2 a {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 	margin: 0px auto;
 	border: 0px solid #D2D2D2FF;
 	font-size: 50px;
@@ -309,7 +308,7 @@ footer{
 	border-radius: 50px;
 }
 
-.top2 img{
+.top img{
 	width:  100%;
 }
 
@@ -345,10 +344,12 @@ footer{
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border: 0px solid #D2D2D2FF;
-	font-size: 24px;
+	font-size: 26px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-family: Font;
 	float: left;
+	letter-spacing: 1px;
+	line-height: 1.2;
 }
 
 .viewtext p{
@@ -377,24 +378,16 @@ footer{
 }
 
 .panel {
-    display: block;
-    width: 100%;
-    height:  40px;
-    padding: 5px 5px;
-    border: 0px solid #D2D2D2FF;
-	font-size: 30px;
-	margin-top: 0px;
-	letter-spacing: 3px;
-	font-family: Font;
-
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 	border: 0px solid #D2D2D2FF;
-	font-size: 30px;
+	font-family: Font;
+	font-size: 32px;
 	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	letter-spacing: 2px;
 }
 
 .panel a{
@@ -420,40 +413,58 @@ footer{
 }
 
 .fg18{
-	color: #6b6b6b;
-	font-size: 22px;
-	letter-spacing: 0px;
 	font-family: Font;
+	color: #6b6b6b;
+	font-size: 21px;
+	letter-spacing: 0px;
 }
 
 .fg19{
+	font-family: Font;
 	color: #6b6b6b;
 	font-size: 26px;
 	letter-spacing: 1px;
 	line-height: 1.5;
-	font-family: Font;
 }
 
 
 .fg20{
-	color: #6b6b6b;
-	font-size: 22px;
-	letter-spacing: 3px;
 	font-family: Font;
+	color: #6b6b6b;
+	font-size: 28px;
+	letter-spacing: 3px;
 }
 
 .fb20{
+	font-family: Font;
 	color: black;
 	font-size: 22px;
 	letter-spacing: 3px;
-	font-family: Font;
 }
 
 
 .fb27{
+	font-family: Font;
 	color: black;
 	font-size: 40px;
 	letter-spacing: 2px;
-	font-family: Font;
 }
 
+.icon {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+	width: 35px;
+	height: 35px;
+	float:  right;
+	border: 0px solid white;
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 20px;
+
+}
+
+.icon img{
+
+	width:  100%;
+}
