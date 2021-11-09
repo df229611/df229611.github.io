@@ -33,7 +33,7 @@
 		document.getElementById("filename").innerHTML = "load: "+fileName;
 
 		fileName = window.location.href.split('/').pop().replace('.html', '');
-		fileName = "";
+
 		if(fileName=="") fileName="index";
 		addScript(fileName+"/main.js");
 
