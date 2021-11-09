@@ -29,7 +29,7 @@ function DOMContentLoaded(W, H, F, FILENAME){
 	}else{
 	  	// Вы используете компьютер
 
-	    document.getElementById('screen').style.border = Frame+'px solid #000000';
+	    document.getElementById('screen').style.border = Frame+'0px solid #000000';
 	    document.getElementById('screen').style.borderImage = 'url(resource/img/frame.png) '+Frame+' round round';
 	  	//alert("w:"+clientWidth+"h:"+clientHeight);
 
