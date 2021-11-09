@@ -2,13 +2,11 @@
 <html>
 <head>
 	<link rel="stylesheet" href="resource/css/style.css">
-<!--
 	<script src="resource/src/Engine.js" ></script>
 	<script src="resource/src/Math.js" ></script>
 	<script src="resource/src/toggleFullScreen.js" ></script>
 	<script src="resource/src/disableContextMenu.js" ></script>
 	<script src="resource/src/DOMContentLoaded.js" ></script>
--->
 	<title></title>
 </head>
 <body>
@@ -36,10 +34,10 @@
 
 		fileName = window.location.href.split('/').pop().replace('.html', '');
 
-		addScript("resource/src/Math.js");
-		addScript("resource/src/toggleFullScreen.js");
-		addScript("resource/src/disableContextMenu.js");
-		addScript("resource/src/DOMContentLoaded.js");
+		//addScript("resource/src/Math.js");
+		//addScript("resource/src/toggleFullScreen.js");
+		//addScript("resource/src/disableContextMenu.js");
+		//addScript("resource/src/DOMContentLoaded.js");
 		addScript(fileName+"/main.js");
 
 		document.title = "Animation";
