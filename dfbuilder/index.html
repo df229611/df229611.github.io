@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="resource/css/style.css">
+	<script src="resource/src/Engine.js" defer></script>
+	<title></title>
+</head>
+<body>
+	<div class="parent">
+		<div id="screen" class="frame" onmousedown="toggleFullScreen()">
+		<!-- <div id="scanlines" ></div> -->
+		</div>
+		<div id="name" class="title"></div>
+		<div id="filename" class="filename"></div>
+		<div id="scanlines" ></div>
+	</div>
+
+	<script>
+
+		function addScript(src){
+
+			var script = document.createElement('script');
+			script.src = src;
+			script.async = false; // чтобы гарантировать порядок
+			document.head.appendChild(script);
+		}
+		
+		var fileName = location.pathname.split("/").slice(-1);
+		document.getElementById("filename").innerHTML = "load: "+fileName;
+
+		fileName = window.location.href.split('/').pop().replace('.html', '');
+
+		addScript("resource/src/Math.js");
+		addScript("resource/src/toggleFullScreen.js");
+		addScript("resource/src/disableContextMenu.js");
+		addScript("resource/src/DOMContentLoaded.js");
+		addScript(fileName+"/main.js");
+
+		document.title = "Animation";
+		
+		document.getElementById("name").innerHTML = "HELLO WORLD!";
+		
+		let scanlines = true;
+
+		if(scanlines){
+
+			document.getElementById("scanlines").className = "scanlines";
+		}else{
+			
+			document.getElementById("scanlines").className = "";
+		}
+		
+		let fullscreen = false;
+
+		if(!fullscreen){
+	
+			document.getElementById("screen").onmousedown = null;
+		}
+
+		// Запускаем скрипты после загрузки страницы  
+		document.addEventListener('DOMContentLoaded', function() {
+		    
+		  setTimeout(DOMContentLoaded, 200, 450, 350, 30, fileName);
+		}, false);
+
+	</script>>
+</body>
+</html>
