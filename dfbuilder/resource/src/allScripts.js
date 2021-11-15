@@ -177,16 +177,15 @@ function DOMContentLoaded(WIDTH, HEIGHT, FRAME_IMG, FRAME_SIZE, SIZE, FILENAME) 
 
 		if (navigator.userAgent.search(/Safari/) < -1) {
 
-			document.getElementById('screen').style.border = '0px solid #000000';
+		    document.getElementById('screen').style.border = FRAME_SIZE+'px solid #000000';
+			document.getElementById('screen').style.borderImage = 'url(../resource/img/'+FRAME_IMG+') '+FRAME_SIZE+' round round';
 		};
 
 	}else{
 	  	// Вы используете компьютер
 
 	    document.getElementById('screen').style.border = FRAME_SIZE+'px solid #000000';
-	    document.getElementById('screen').style.borderImage = 'url(resource/img/'+FRAME_IMG+') '+FRAME_SIZE+' round round';
-	  	//alert("w:"+clientWidth+"h:"+clientHeight);
-
+	    document.getElementById('screen').style.borderImage = 'url(../resource/img/'+FRAME_IMG+') '+FRAME_SIZE+' round round';
 	}
 	
 	// Ширина
