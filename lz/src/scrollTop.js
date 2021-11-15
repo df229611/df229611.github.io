@@ -6,10 +6,10 @@ function up() {
 	
 	if(top > 0) {
 	
-		/* window.scrollBy(0,-100); */
+		//window.scrollBy(0,-100);
 		/* Замедление при приближении к началу страницы */
-		window.scrollBy(0,((top+100)/-15));
-		t = setTimeout('up()',20);
+		window.scrollBy(0,((top+100)/-10));
+		t = setTimeout('up()',10);
 	} else clearTimeout(t);
 
 	return false;

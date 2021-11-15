@@ -6,17 +6,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="src/scrollTop.js"></script>
 	<script src="src/dropMenu.js"></script>
+	<script src="src/readXMLHttp.js"></script>
 	<script src="src/loadPage.js"></script>
 </head>
-<body  onload="setTimeout(loadPage, 100);">
+<body>
+	<!-- https://compressor.andona.click/ -->
+	<!-- HEADRE -->
 	<header>
 		
-		<div class="logo" onclick="location.href='index.html';"></div>
+		<div class="logo" onclick='location.href="index.html"';></div>
 		
 		<div class="navbar">
-<!--
-		  <a href="#home">HOME</a>
--->
+
+		  <a href="index.html"></a>
+
 		  <div class="dropdown">
 		    <button class="dropbtn" onclick="myFunction()">
 		      <i class="fa fa-caret-down"></i>
@@ -28,9 +31,12 @@
 		    </div>
 		  </div> 
 		</div>
+
 	</header>
+
 	<div class="bodyblock">
 
+		<!-- Описание и цена товара -->
 		<div class="content" onclick="location.href='v0000.html';">
 				<img src="img/logo.png">
 				<br>
@@ -38,8 +44,8 @@
 				<p>Цена грн.</p>
 				<br>
 		</div>
-<!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
 
+		<!-- Описание и цена товара -->
 		<div class="content" onclick="location.href='v0000.html';">
 				<img src="img/logo.png">
 				<br>
@@ -47,8 +53,8 @@
 				<p>Цена грн.</p>
 				<br>
 		</div>
-<!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
-		
+
+		<!-- Описание и цена товара -->
 		<div class="content" onclick="location.href='v0000.html';">
 				<img src="img/logo.png">
 				<br>
@@ -56,11 +62,14 @@
 				<p>Цена грн.</p>
 				<br>
 		</div>
-<!--		<div class="top"> <a href="#" id="up" onclick="return up()">наверх</a> </div> -->
+
+		<!-- Вверх страницы -->
 		<div class="top"> <a href="#" id="up" onclick="return up()"><img src="img/up.png"></a></div>
-	</div>
 
-	<footer id="footer">
+	</div>
+	
+	<!-- FOOTER -->
+	<footer>
 
 		<div class="information">
 			<br>
@@ -70,13 +79,13 @@
 			<p> Ukrainian fashion brand </p>
 			<p> <a href="index.html">lzcelebrity@gmail.com</a></p>
 			<p> Kyiv, Ukraine</p>
-			<div class="icon"><a href="https://www.instagram.com"><img src="img/instagram_w.png"></a></div>
-			<div class="icon"><a href="https://vk.com/"><img src="img/vk_w.png"></a></div>
-			<div class="icon"><a href="https://www.facebook.com"><img src="img/facebook_w.png"></a></div>
+			<div class="icon"><a href="https://www.facebook.com/lzcelebrity" target="_blank"><img src="img/facebook_w.png"></a></div>
+			<div class="icon"><a href="https://www.instagram.com/lzcelebrity" target="_blank"><img src="img/instagram_w.png"></a></div>
 		</div>
-		<div class="creator">Create by df229611</div>
-	</footer>
 
+		<div class="creator">Create by df229611</div>
+
+	</footer>
 
 </body>
 </html>

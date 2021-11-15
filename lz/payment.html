@@ -6,31 +6,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="src/scrollTop.js"></script>
 	<script src="src/dropMenu.js"></script>
+	<script src="src/loadPage.js"></script>
 </head>
 <body>
-	<header>
-		
-		
-		<div class="logo" onclick="location.href='index.html';"><br>
-		</div>
-		
-		<div class="navbar">
-<!--
-		  <a href="#home">HOME</a>
--->
-		  <div class="dropdown">
-		    <button class="dropbtn" onclick="myFunction()">
-		      <i class="fa fa-caret-down"></i>
-		    </button>
-		    <div class="dropdown-content" id="myDropdown">
-		      <a href="index.html">магазин</a>
-		      <a href="payment.html">информация</a>
-			  <a href="contact.html">контакты</a>
-		    </div>
-		  </div> 
-		</div>
-		
-	</header>
+	
+	<!-- HEADRE -->
+	<header id="header"></header>
+
 	<div class="bodyblock">
 		
 		<div class="panel"><a class="fbp20" href="index.html"><img src="img/left.png"></a></div>
@@ -42,7 +24,7 @@
 			<br>
 			<p><span class="fg19">Доставка службой Новая почта.<span></p>
 			<p><span class="fg19">Отправка наличия на следующий день после заказа.<span></p>
-			<p><span class="fg19">Если изделие не в наличии - пошив 7-14 дней.<span></p>
+			<p><span class="fg19">Если изделия нет в наличии - пошив 7-14 дней.<span></p>
 			<p><span class="fg19">Наложенным платежом возможна доставка только по Украине.<span></p>
 			<p><span class="fg19">По полной предоплате - в любую точку мира.<span></p>
 			<br>
@@ -57,9 +39,7 @@
 			<br>
 			<br>
 			<p><span class="fg19">Полная предоплата на р/с в Приватбанке.<span></p>
-			<p><span class="fg19">Наложенный платеж при предоплате 200грн.<span></p>
-			<br>
-			<br>
+			<p><span class="fg19">Наложенный платеж при предоплате 400грн.<span></p>
 			<br>
 			<br>
 			<br>
@@ -69,23 +49,8 @@
 		<div class="top"> <a href="#" id="up" onclick="return up()"><img src="img/up.png"></a></div>
 	</div>
 
-
-	<footer id="footer">
-
-		<div class="information">
-			<br>
-			LZ Celebrity
-			<br><br>
-			<p> Designer L. Zaitseva </p>
-			<p> Ukrainian fashion brand </p>
-			<p> <a href="index.html">lzcelebrity@gmail.com</a></p>
-			<p> Kyiv, Ukraine</p>
-			<div class="icon"><a href="https://www.instagram.com"><img src="img/instagram_w.png"></a></div>
-			<div class="icon"><a href="https://vk.com/"><img src="img/vk_w.png"></a></div>
-			<div class="icon"><a href="https://www.facebook.com"><img src="img/facebook_w.png"></a></div>
-		</div>
-		<div class="creator">Create by df229611</div>
-	</footer>
+	<!-- FOOTER -->
+	<footer id="footer"></footer>
 
 </body>
 </html>

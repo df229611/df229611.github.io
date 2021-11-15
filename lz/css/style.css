@@ -4,14 +4,20 @@
 }
 
 @font-face {
-	font-family: Font;						/* Гарнитура шрифта */
-    src: url('../fonts/Corki_Rounded.ttf');	/* Путь к файлу со шрифтом */ 
-}
-
-@font-face {
 	font-family: PixelCyr;					/* Гарнитура шрифта */
     src: url('../fonts/PixelCyr.ttf');		/* Путь к файлу со шрифтом */ 
 }
+
+@font-face {
+	font-family: FontAll;					/* Гарнитура шрифта */
+    src: url('../fonts/OldStandardTT-Regular.ttf');		/* Путь к файлу со шрифтом */ 
+}
+
+@font-face {
+	font-family: FontV;					/* Гарнитура шрифта */
+    src: url('../fonts/Spectral-Regular.ttf');		/* Путь к файлу со шрифтом */ 
+}
+
 
 body{
 	background-color: white;				/* Цвет фона веб-страницы */
@@ -34,7 +40,7 @@ header{
 	text-align: center;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FontAll;
 	border: 0px solid #BABDB6FF;
 	font-weight: bold;
 	font-style: normal;
@@ -56,7 +62,7 @@ header{
 	border-radius: 0px;
 	box-shadow: 0 0 0px #888A85FF;
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FontAll;
 	float: left;
 
 }
@@ -73,13 +79,13 @@ header{
 	padding-bottom: 0px; 
 	border: 1px solid white;
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FontAll;
 }
 
 
 .logo{
 	cursor: pointer;
-	width: 45%;							/* Ширина блока */
+	width: 35%;							/* Ширина блока */
 	height: 95%;						/* Высота блока */
 	background: url(../img/logo.png);	/* Путь к фоновому рисунку */
 	background-repeat: no-repeat;		/* Повторяем фон */
@@ -87,7 +93,7 @@ header{
 	background-size: contain;			/* Масштабируем фон */
 	float: left;						/* Обтекание блока */
 	border: 0px solid #000000FF;		/* Контур блока */
-	font-family: TG17th;				/* Шрифт блока */
+	font-family: FontAll;				/* Шрифт блока */
 	font-size: 50px;					/* Размер шрифта блока */
 	color: black;						/* Цвет текста блока */
 	margin-left: 0px;					/* Отступ блока слева */
@@ -113,10 +119,11 @@ header{
 }
 
 .content{
+    display: block;
     cursor: pointer;
 	background-color: #fcfcfc;			/* Цвет фона блока */
 	margin: 0px auto;
-	width: 95%;
+	width: 90%;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	padding-left: 0%;
@@ -126,8 +133,8 @@ header{
 	border: 0px solid #D2D2D2FF;
 	border-radius: 0px;
 	box-shadow: 0 0 15px #888A85FF;
-	font-family: Font;
-	font-size: 26px;
+	font-family: FontAll;
+	font-size: 22px;
 	letter-spacing: 1px;
 	line-height: 1.2;
 }
@@ -153,7 +160,7 @@ footer{
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #D3D7CFFF;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FontAll;
 	float: left;
 }
 
@@ -163,7 +170,7 @@ footer{
 	margin: 0px auto;
 	float: left;
 	border:1px solid #BABDB6FF;
-	font-family: Font;
+	font-family: FontAll;
 	font-size: 22px;
 	color: #EEEEECFF;
 	margin-left: 5%;
@@ -175,7 +182,7 @@ footer{
 }
 
 .information p{
-	text-align: left;
+	text-align: center;
 	margin-left: 15px;
 	margin-top: 5px;
 }
@@ -210,7 +217,7 @@ footer{
     overflow: hidden;
     background-color: white;
     border: 0px solid #BABDB6FF;
-	font-family: Font;
+	font-family: FontAll;
     float: right;
 	letter-spacing: 6px;
 	font-style: normal;
@@ -219,12 +226,13 @@ footer{
 
 .navbar a {
     float: left;
-    font-size: 30px;
-    color: white;
+    font-size: 21px;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     float: left;			/* left */
+    margin-top: 30px;
 }
 
 /* Впадающее меню */
@@ -233,10 +241,10 @@ footer{
     overflow: hidden;
 }
 
-/* Меню выпадения */
+/* Меню выпадения решетка*/
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 30px;    
+    font-size: 21px;    
     border: none;
     outline: none;
     color: white;
@@ -246,9 +254,8 @@ footer{
 	margin-left: 20px;
     margin-right: 50px;
     margin-top: 30px;
-    margin-bottom: 20px;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	background: url(../img/60510.png);		/* Путь к фоновому рисунку */
 	background-repeat: no-repeat;			/* Повторяем фон */
 	background-position: top center;		/* Положение фона */
@@ -265,21 +272,24 @@ footer{
     display: none;
     position: absolute;
     background-color: #E8E8E8;
-    min-width: 60%;
-    min-height: 30%;
+    min-width: 320px;
+    min-height: 250px;
 	border: 0px solid #D2D2D2FF;
 	border-radius: 0px;
     box-shadow: 0px 8px 16px 10px #888A85FF;
     z-index: 1;
     right: 5%;
-    padding: 20px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /* То что внутри выпадающего блока */
 .dropdown-content a {
     float: none;
     color: grey;
-    padding: 6% 20px;
+    padding: 2% 15px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -319,6 +329,8 @@ footer{
     flex-wrap: wrap;
     padding: 0 4px;
     border: 0px solid #D2D2D2FF;
+	max-width: 85%;
+	margin: 0 auto;
 }
 
 * Create four equal columns that sits next to each other */
@@ -344,9 +356,8 @@ footer{
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border: 0px solid #D2D2D2FF;
-	font-size: 26px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-family: Font;
+	font-size: 22px;
+	font-family: FontV;
 	float: left;
 	letter-spacing: 1px;
 	line-height: 1.2;
@@ -357,25 +368,61 @@ footer{
 	text-align: left;
 }
 
+.contact{
+
+    display: block;
+	margin: 0 auto;
+    border: 0px solid #D2D2D2FF;
+	max-width: 45%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen {
+	header{
+		height: 210px;
+	}
+    
+    .content {
+        width: 60%;
+    }
+	
+	.row {
+        max-width: 80%;
+	}
+
+	.contact {
+        max-width: 55%;
+	}
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
+
+	/* Меньше 800px*/
+
     .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
 
-}
+	header{
+		height: 180px;
+	}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+    .content {
+        width: 90%;
     }
 
+	.row {
+        max-width: 100%;
+	}
+	
+	.contact{
+        max-width: 90%;
+	}
 }
+
 
 .panel {
     display: -ms-flexbox; /* IE10 */
@@ -384,8 +431,8 @@ footer{
     width: 50px;
     height: 50px;
 	border: 0px solid #D2D2D2FF;
-	font-family: Font;
-	font-size: 32px;
+	font-family: FontAll;
+	font-size: 28px;
 	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
 	letter-spacing: 2px;
 }
@@ -412,41 +459,42 @@ footer{
 	width:  100%;
 }
 
+/* Больше интересного*/
 .fg18{
-	font-family: Font;
+	font-family: FontAll;
 	color: #6b6b6b;
-	font-size: 21px;
+	font-size: 18px;
 	letter-spacing: 0px;
 }
-
+/* Описание доставка оплата */
 .fg19{
-	font-family: Font;
+	font-family: FontAll;
 	color: #6b6b6b;
-	font-size: 26px;
+	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 1.5;
 }
 
-
+/* тел эмейл */
 .fg20{
-	font-family: Font;
+	font-family: FontAll;
 	color: #6b6b6b;
-	font-size: 28px;
-	letter-spacing: 3px;
+	font-size: 22px;
+	letter-spacing: 2px;
 }
 
 .fb20{
-	font-family: Font;
+	font-family: FontAll;
 	color: black;
 	font-size: 22px;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
-
+/* Заглавные */
 .fb27{
-	font-family: Font;
+	font-family: FontAll;
 	color: black;
-	font-size: 40px;
+	font-size: 29px;
 	letter-spacing: 2px;
 }
 
@@ -459,7 +507,7 @@ footer{
 	float:  right;
 	border: 0px solid white;
 	margin-top: 0px;
-	margin-left: 10px;
+	margin-left: 0px;
 	margin-right: 20px;
 
 }
