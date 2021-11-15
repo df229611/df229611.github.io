@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div class="parent">
+		<!-- <input type="range" id="range" min="1" max="2" value="1"> -->
 		<div id="screen" class="frame" onmousedown="toggleFullScreen()">
 		<!-- <div id="scanlines" ></div> -->
 		</div>
@@ -30,22 +31,40 @@
 		addScript(fileName+"/main.js");
 
 		// Название страницы
-		document.title = "Animation";
+		document.title = "DFBuilder";
 		// Имя
 		document.getElementById("name").innerHTML = "HELLO WORLD!";
 
 		// Включить выключить скан линий
-		scanLines(true);
-
+		scanLines(false);
 		// Включить выключить полный экран
 		fullScreen(false);
+		// Ширина игрового поля
+		let width = 250;
+		// Высота игрового поля
+		let height = 250;
+		// Размер константа, где 0 изменяется автоматически, все что больше не изменяющийся размер
+		let size = 1;
+		// Максиальный размер увеличения
+		let maxsize = 100;
+		// Шаблон увеличения где 0 плавное, 1 целочисленное, 2 на весю область просмотра
+		let template = 1;
+		// Рамка вокруг игрового поля
+		let frame_size = 30;
+		let frame_img = "frame00.png";
 
 		// Запускаем скрипты после загрузки страницы  
 		document.addEventListener('DOMContentLoaded', function() {
 
-		  setTimeout(DOMContentLoaded, 500, 250, 250, 30, fileName);
+			setTimeout(DOMContentLoaded, 100, width, height, frame_img, frame_size, size, fileName);
+			if(!size) res(width, height, 0, 0, maxsize, template, 0, 0);
 		}, false);
-
+		/*
+		range.addEventListener("input", function() {
+			
+			document.body.style.setProperty("--size", this.value + "px");
+		});
+		*/
 	</script>>
 </body>
 </html>
