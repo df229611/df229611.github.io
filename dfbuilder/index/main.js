@@ -59,7 +59,7 @@ function main(WIDTH, HEIGHT, FRAME_SIZE, MARGINLR, MARGINTB, FILENAME) {
 			// Устанавливаем шрифт
 			SerifTextBig = {font:"12px serif", fill:"#ffffff", align:"center"};
 			// Загружаем изображение в память x, y, frame
-			game.load.spritesheet("sprite00", FILENAME+"/img/soul.png", 39, 44, 4);
+			game.load.spritesheet("sprite00", "img/soul.png", 39, 44, 4);
 			
 		}
 
