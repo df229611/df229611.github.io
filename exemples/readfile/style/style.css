@@ -1,0 +1,39 @@
+* {
+	margin: 0; padding: 0; 
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: ZXSpectrum; /* Гарнитура шрифта */
+    src: url('../fonts/ZXSpectrum7.ttf'); /* Путь к файлу со шрифтом */ 
+}
+
+@font-face {
+	font-family: PixelGothic; /* Гарнитура шрифта */
+    src: url('../fonts/Bitmgothic.ttf'); /* Путь к файлу со шрифтом */ 
+}
+
+body{
+	background-color: white; /* Цвет фона веб-страницы */
+} 
+
+object{
+	overflow-x: hidden;                         /*Убираем прокрутку по Икс    */
+	overflow-y: hidden;                         /*Убираем прокрутку по Игрек  */
+	color: #6b6b6b;
+	font-size: 25px;
+	font-family: ZXSpectrum;
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	/*
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	margin: -150px 0 0 -200px;
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 15px #888A85FF;
+	*/
+}
