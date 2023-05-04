@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="../resource/css/style.css">
+<script src="../resource/src/engine.js"></script>
+<script src="../resource/src/scripts.js"></script>
+<script src="main.js"></script>
+</head>
+<body>
+<div class="parent">
+<div id="screen" class="frame" onmousedown="toggleFullScreen()"></div>
+<div id="name" class="title"></div>
+<div id="filename" class="filename"></div>
+<div id="scanlines" ></div>
+</div>
+<script>
+let fileName = getCurentFileName();
+document.getElementById("filename").innerHTML = "load: "+fileName;	
+fileName = fileName.replace('.html', '');
+if(fileName=="") fileName="index";
+document.title = "Builder ";
+document.getElementById("name").innerHTML = "#HELLO WORLD!";
+scanLines(1);
+fullScreen(0);
+let size = 0;
+document.addEventListener('DOMContentLoaded', function() {
+setTimeout(DOMContentLoaded, 300,208,208,"frame00.png",0,0, fileName);
+if(!size) res(208,208, 0, 0, 10, 1, 0, 0);
+}, false);
+</script>
+</body>
+</html>
