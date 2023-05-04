@@ -1,0 +1,5 @@
+<script>
+let fileName = getCurentFileName();
+document.getElementById("filename").innerHTML = "load: "+fileName;	
+fileName = fileName.replace('.html', '');
+if(fileName=="") fileName="index";
