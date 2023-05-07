@@ -1,2 +1,0 @@
-# lzcelebrity.github.io
-lzcelebrity
