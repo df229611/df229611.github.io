@@ -1,0 +1,514 @@
+* {
+	margin: 0; padding: 0; 
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: PixelCyr;								/* Гарнитура шрифта */
+    src: url('../fonts/PixelCyr.ttf');					/* Путь к файлу со шрифтом */ 
+}
+
+@font-face {
+	font-family: FontAll;								/* Гарнитура шрифта */
+    src: url('../fonts/zx_spectrum-7_bold.ttf');		/* Путь к файлу со шрифтом */ 
+}
+
+@font-face {
+	font-family: FontV;									/* Гарнитура шрифта */
+    src: url('../fonts/zx_spectrum-7_bold.ttf');			/* Путь к файлу со шрифтом */ 
+}
+
+
+body{
+	background-color: white;							/* Цвет фона веб-страницы */
+} 
+
+hr {
+	margin: 0px auto;
+	width: 100%;
+	border: none;										/* Убираем границу */
+	background-color: grey;								/* Цвет линии */
+	color: red;											/* Цвет линии для IE6-7 */
+	height: 1px;										/* Толщина линии */
+}
+
+header{
+	/*height: 300px;*/
+	/*background: url(../img/background.png) repeat-x center bottom;*/
+	background-color: white;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: FontAll;
+	border: 0px solid #BABDB6FF;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 100%;
+	color: black;
+	box-shadow: 0 0 20px #888A85FF;	
+}
+
+.block{
+	margin: 0px auto;
+	width: 99%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px; 
+	border: 0px solid #BABDB6FF;
+	border-radius: 0px;
+	box-shadow: 0 0 0px #888A85FF;
+	font-size: 20px;
+	font-family: FontAll;
+	float: left;
+}
+
+.bodyblock{
+	background-color: white;			/* Цвет фона веб-страницы */
+	margin: 0px auto;
+	width: 99%;
+	margin-top: 22px;
+	margin-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px; 
+	border: 1px solid white;
+	font-size: 20px;
+	font-family: FontAll;
+}
+
+
+.logo{
+	cursor: pointer;
+	width: 35%;					/* Ширина блока */
+	height: 95%;					/* Высота блока */
+	background: url(../img/logo.png);		/* Путь к фоновому рисунку */
+	background-repeat: no-repeat;			/* Повторяем фон */
+	background-position: top left;			/* Положение фона */
+	background-size: contain;			/* Масштабируем фон */
+	float: left;					/* Обтекание блока */
+	border: 0px solid #000000FF;			/* Контур блока */
+	font-family: FontAll;				/* Шрифт блока */
+	font-size: 50px;				/* Размер шрифта блока */
+	color: black;					/* Цвет текста блока */
+	margin-left: 0px;				/* Отступ блока слева */
+	margin-top: 0px;				/* Отступ блока сверху */
+}
+
+.logo a{
+	color: #919191;					/* Цвет ссылок */
+	text-decoration: none;				/* Отменяем подчеркивание у ссылки */
+	background-color:  white;
+}
+
+.logo a:visited {
+	color: #919191;			/* Цвет посещенных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+
+}
+
+.logo a:active {
+	color: white;			/* Цвет активных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  black;	
+}
+
+.content{
+	display: block;
+	cursor: pointer;
+	background-color: #fcfcfc;			/* Цвет фона блока */
+	margin: 0px auto;
+	width: 90%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-top: 0%;
+	padding-bottom: 0%; 
+	border: 0px solid #D2D2D2FF;
+	border-radius: 0px;
+	box-shadow: 0 0 15px #888A85FF;
+	font-family: FontAll;
+	font-size: 22px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.content p{
+	margin-left: 25px;
+	margin-top: 15px;
+}
+
+.content img{
+	display: block; /* Блочный элемент (для старых браузеров) */
+	margin: 0 auto; /* Выравнивание по центру */
+	width: 100%;	/* Ширина */
+}
+
+footer{
+	border: 0px solid #BABDB6FF;
+	height: 500px;
+	width:  100%;
+	text-align:center;
+	background-color: #000000FF;
+	margin-top: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #D3D7CFFF;
+	font-family: FontAll;
+	float: left;
+}
+
+.information{
+	width: 90%;
+	height: 280px;
+	margin: 0px auto;
+	float: left;
+	border:1px solid #BABDB6FF;
+	font-family: FontAll;
+	font-size: 22px;
+	color: #EEEEECFF;
+	margin-left: 5%;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	letter-spacing: 3px;
+	line-height: 1.3;
+}
+
+.information p{
+	text-align: center;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.information a{
+    color: white;			/* Цвет ссылок */
+}
+
+.information a:visited {
+	color: #cecece;			/* Цвет посещенных ссылок */
+}
+
+.information a:active {
+	color: #ffff00;			/* Цвет активных ссылок */
+}
+
+.creator{
+	width: 99%;
+	height: 30px;
+	float: left;
+	border: 0px solid #BABDB6FF;
+	font-family: PixelCyr;
+	font-size: 18px;
+	color: #EEEEECFF;
+	margin-left: 0px;
+	margin-top: 60px;
+}
+
+/* Меню навигации */
+
+.navbar {
+	overflow: hidden;
+	background-color: white;
+	border: 0px solid #BABDB6FF;
+	font-family: FontAll;
+	float: right;
+	letter-spacing: 6px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.navbar a {
+	float: left;
+	font-size: 21px;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;			/* left */
+	margin-top: 30px;
+}
+
+/* Впадающее меню */
+.dropdown {
+	float: left;			/* left */
+	overflow: hidden;
+}
+
+/* Меню выпадения решетка*/
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 21px;    
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin-left: 20px;
+	margin-right: 50px;
+	margin-top: 30px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/menu.png);		/* Путь к фоновому рисунку */
+	background-repeat: no-repeat;			/* Повторяем фон */
+	background-position: top center;		/* Положение фона */
+	background-size: contain;				/* Масштабируем фон */
+}
+
+/* Меню при наведении */
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: white;
+}
+
+/* Выпадающий блок */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #E8E8E8;
+	min-width: 320px;
+	min-height: 250px;
+	border: 0px solid #D2D2D2FF;
+	border-radius: 0px;
+	box-shadow: 0px 8px 16px 10px #888A85FF;
+	z-index: 1;
+	right: 5%;
+	/*top: 1%;*/
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+/* То что внутри выпадающего блока */
+.dropdown-content a {
+	float: none;
+	color: grey;
+	padding: 2% 15px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	color: black;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* наверх */
+.top a {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	width: 50px;
+	height: 50px;
+	margin: 0px auto;
+	border: 0px solid #D2D2D2FF;
+	font-size: 50px;
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	border-radius: 50px;
+}
+
+.top img{
+	width:  100%;
+}
+
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	border: 0px solid #D2D2D2FF;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+* Create four equal columns that sits next to each other */
+.column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width:  100%;
+}
+
+.viewtext{
+	display: block; /* Блочный элемент (для старых браузеров) */
+	background-color: #FFFFFF;			/* Цвет фона блока */
+	/* margin: 0px auto; */
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 0px solid #D2D2D2FF;
+	font-size: 22px;
+	font-family: FontV;
+	float: left;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.viewtext p{
+	text-align: left;
+}
+
+.contact{
+	display: block;
+	margin: 0 auto;
+	border: 0px solid #D2D2D2FF;
+	max-width: 45%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen {
+	header{
+		height: 210px;
+	}
+	
+	.content {
+		width: 60%;
+	}
+	
+	.row {
+		max-width: 80%;
+	}
+	
+	.contact {
+		max-width: 55%;
+	}
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+
+	/* Меньше 800px*/
+
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+	
+	header{
+		height: 180px;
+	}
+	
+	.content {
+		width: 90%;
+	}
+	
+	.row {
+		max-width: 100%;
+	}
+	
+	.contact{
+		max-width: 90%;
+	}
+}
+
+
+.panel {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	width: 50px;
+	height: 50px;
+	border: 0px solid #D2D2D2FF;
+	font-family: FontAll;
+	font-size: 28px;
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	letter-spacing: 2px;
+}
+
+.panel a{
+	color: #919191;			/* Цвет ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  white;
+}
+
+.panel a:visited {
+	color: #919191;			/* Цвет посещенных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+
+}
+
+.panel a:active {
+	color: white;			/* Цвет активных ссылок */
+	text-decoration: none;	/* Отменяем подчеркивание у ссылки */
+	background-color:  black;	
+}
+
+.panel img {
+	width:  100%;
+}
+
+/* Больше интересного*/
+.fg18{
+	font-family: FontAll;
+	color: #6b6b6b;
+	font-size: 18px;
+	letter-spacing: 0px;
+}
+/* Описание доставка оплата */
+.fg19{
+	font-family: FontAll;
+	color: #6b6b6b;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+/* тел эмейл */
+.fg20{
+	font-family: FontAll;
+	color: #6b6b6b;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+.fb20{
+	font-family: FontAll;
+	color: black;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+/* Заглавные */
+.fb27{
+	font-family: FontAll;
+	color: black;
+	font-size: 29px;
+	letter-spacing: 2px;
+}
+
+.icon {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+	width: 35px;
+	height: 35px;
+	float:  right;
+	border: 0px solid white;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 20px;
+
+}
+
+.icon img{
+
+	width:  100%;
+}
